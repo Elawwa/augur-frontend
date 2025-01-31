@@ -13,8 +13,6 @@ import {
   Select,
 } from "@chakra-ui/react";
 
-
-
 const mockData = [
   { name: "Distributor A", ytdShipments: 12000, lastMonthShipments: 950, forecastedShipments: 1100 },
   { name: "Distributor B", ytdShipments: 15500, lastMonthShipments: 1200, forecastedShipments: 1300 },
@@ -67,4 +65,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-//hello
