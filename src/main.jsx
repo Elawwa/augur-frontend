@@ -1,10 +1,14 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Dashboard from "./App";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { ChakraProvider } from '@chakra-ui/react';
+import App from './App'; // Correct import path
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const appElement = document.getElementById('root');
+
+ReactDOM.createRoot(appElement).render(
   <React.StrictMode>
-    <Dashboard />
+    <ChakraProvider>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>
 );
